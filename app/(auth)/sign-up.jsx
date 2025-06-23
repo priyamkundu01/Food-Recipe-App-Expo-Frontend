@@ -115,7 +115,7 @@ const signUpScreen = () => {
                 />
               </TouchableOpacity>
 
-              {/* Sign Up Button */}
+            {/* Sign Up Button */}
             <TouchableOpacity
               onPress={handleSignUp}
               style={[authStyles.authButton, loading && authStyles.buttonDisabled]}
@@ -123,7 +123,7 @@ const signUpScreen = () => {
               activeOpacity={0.8}
             >
               <Text style={authStyles.buttonText}>
-                { loading ? 'Signing in...' : 'Sign In'}
+                { loading ? 'Signing up...' : 'Sign Up'}
               </Text>
             </TouchableOpacity>
 
