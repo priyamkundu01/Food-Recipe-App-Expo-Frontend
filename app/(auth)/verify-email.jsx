@@ -66,7 +66,7 @@ const VerifyEmail = ({ email, onBack }) => {
           </Text>
 
           <View style={authStyles.formContainer}>
-            {/* Email Input */}
+            {/* Code Input */}
             <View style={authStyles.inputContainer}>
               <TextInput
                 style={authStyles.textInput}
