@@ -15,7 +15,7 @@ const signInScreen = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const [showPassword, setshowPassword] = useState("");
+  const [showPassword, setshowPassword] = useState(false);
   const [loading, setLoading] = useState(false);
 
   const handleSignIn = async () => {
@@ -74,7 +74,7 @@ const signInScreen = () => {
               <TextInput
                 style={authStyles.textInput}
                 placeholder="Enter email"
-                placeholderTextColor={COLORS.text}
+                placeholderTextColor={COLORS.textLight}
                 value={email}
                 onChangeText={setEmail}
                 keyboardType="email-address"
@@ -87,7 +87,7 @@ const signInScreen = () => {
               <TextInput
                 style={authStyles.textInput}
                 placeholder="Enter password"
-                placeholderTextColor={COLORS.text}
+                placeholderTextColor={COLORS.textLight}
                 value={password}
                 onChangeText={setPassword}
                 secureTextEntry={!showPassword}
